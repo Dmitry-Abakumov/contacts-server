@@ -42,6 +42,8 @@ const updateAvatar = async (req, res) => {
   res.json({ avatarURL });
 };
 
+
+
 module.exports = {
   upatateSubscribtionById: ctrlWrapper(updateSubscribtionById),
   updateAvtar: ctrlWrapper(updateAvatar),
