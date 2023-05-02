@@ -61,7 +61,9 @@ const updateSubscribtionSchema = Joi.object({
 });
 
 const resendVerifyEmailSchema = Joi.object({
-  email: Joi.string().pattern(emailRegexp).required(),
+  email: Joi.string().pattern(emailRegexp).required().messages({
+    "any.required": "missing required field email",
+  }),
 });
 
 const User = model("user", userSchema);
