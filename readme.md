@@ -2,7 +2,7 @@ Hello. Сontacts-server is Node.js application.
 
 It implements routes to:
 
-1. register/login/check/get the current/logout user
+1. register/login/get the current/logout user
 2. send letters
 3. send/resend emails
 4. get all contacts
